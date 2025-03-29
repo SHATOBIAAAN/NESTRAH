@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('../fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/* Основные стили для body */
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+}
+
+/* Стили для header */
+
+.header {
+    height: clamp(80px, 10vh, 120px);
+    background-color: #87e37b;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__title {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Стили для навигации */
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 49.44px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  
+}
+
+.nav__item {
+    margin: 0 clamp(14px, 2vw, 29px); /* Адаптивное расстояние между элементами */
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'MontserratLight', sans-serif;
+    
+    font-size: 24.62px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+/* Стили для main */
+.main {
+    padding: clamp(10px, 2vh, 20px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+/* Стили для кнопок */
+.button {
+    background-color: #ffffff;
+    color: #87e37b;
+    border: none;
+  
+    border-radius: 11px;
+
+    padding: clamp(16px, 1vh, 12px) clamp(59px, 2vw, 24px);
+    cursor: pointer;
+
+  
+}
+
+.button:hover {
+    background-color: rgb(0, 0, 0);
+}

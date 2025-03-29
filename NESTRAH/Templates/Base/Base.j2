@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}NESTRAH{% endblock %}</title>
+    <link rel="stylesheet" href="{{ static('css/Base.css') }}">
+    {% block head %}{% endblock %}
+</head>
+<body class="body">
+    <header class="header">
+        
+        <nav>
+            <ul class="nav">
+                <li class="nav__item"><a class="logo" href="{{ url('MainPage') }}">NESTRAH</a></li>
+                <li class="nav__item"><a class="nav__link" href="{{ url('story_list') }}">Список историй</a></li>
+                <li class="nav__item"><a class="nav__link " href="{{ url('new_story') }}">Новая история</a></li>
+                <li class="nav__item"><a class="nav__link button" href="{{ url('login') }}">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

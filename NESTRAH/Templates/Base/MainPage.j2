@@ -1,0 +1,22 @@
+{% extends "base/base.j2" %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{{ static('css/MainPage.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="main-info">
+        <div class="main-info-text">
+        <h1 class="main-title">ДОБРО ПОЖАЛОВАТЬ</h1>
+        <p class="main-description">В страховую, которая не страхует! 
+        Твои неудачи — это наш повод для смеха.
+        Делись своим нестраховым случаем и получай 
+        награды за самые эпичные фейлы 😅.</p>
+        </div>
+        <div class="buttons-container">
+            <button class="btn-submit-story btn-text">Отправить свой случай</button>
+            <button class="btn-view-stories btn-text">Чужие секретики</button>
+        </div>
+    </div>
+{% endblock %}
