@@ -46,15 +46,14 @@
     align-items: center;
 }
 
-.logo{
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 49.44px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 49.44px;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 .nav__item {
@@ -65,7 +64,7 @@
     color: #fff;
     text-decoration: none;
     font-family: 'MontserratLight', sans-serif;
-    
+
     font-size: 24.62px;
     line-height: 100%;
     letter-spacing: 0%;
@@ -78,23 +77,52 @@
     margin: 0 auto;
 }
 
-
-
-
 /* Стили для кнопок */
 .button {
     background-color: #ffffff;
     color: #87e37b;
     border: none;
-  
+
     border-radius: 11px;
 
     padding: clamp(16px, 1vh, 12px) clamp(59px, 2vw, 24px);
     cursor: pointer;
-
-  
 }
 
 .button:hover {
     background-color: rgb(0, 0, 0);
+}
+
+.main-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); /* Учитываем высоту header и footer */
+    margin: 0 auto;
+}
+.main-info-text {
+    color: #ffffff;
+}
+
+.main-title {
+    font-family: 'Unbounded';
+    font-weight: 900;
+    font-size: 68.58px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.main-description {
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 24.09px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 971px;
+    height: 90px;
 }

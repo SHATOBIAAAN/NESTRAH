@@ -1,0 +1,53 @@
+{% extends "base/base.j2" %}
+
+{% block head %}
+    
+    <link rel="stylesheet" href="{{ static('css/Base.css') }}">
+    <link rel="stylesheet" href="{{ static('css/Login.css') }}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="main-info">
+        <div class="main-info-text">
+            <h1 class="main-title">Авторизация</h1>
+            <p class="main-description">Присоединяйся к сообществу людей, которые умеют
+посмеяться над своими фейлами 🙈!</p>
+        </div>
+        <div class="login-container">
+            {# <form action="" method="post">
+                {{ csrf_input }}
+                {% for field in form %}
+                    <div class="form-group">
+                        {{ field.label_tag() }}
+                        {{ field }}
+                        {% if field.errors %}
+                            <div class="error">
+                                {% for error in field.errors %}
+                                    {{ error }}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                <button type="submit">Зарегистрироваться</button>
+            </form> #}
+            <div class="container-auth">
+                    <h2 class="container-auth-form-title">Авторизация</h2>
+                <div class="container-auth-form">
+                    <div class="container-auth-form-input">
+                   <input type="text" placeholder="Введите почту ">
+                   <input type="password" placeholder="Введите пароль ">
+                 <h3 class="container-auth-error">error</h3>
+                   <div class="container-auth-form-button">
+                   <button type="submit">Войти</button>
+                   </div>
+                    </div>
+                </div>
+            </div>
+              <p class="container-auth-form-text">Ещё нет аккаунта? <a href="{{ url('register') }}">Регистрация→</a></p>
+        </div>
+                  
+    </div>
+{% endblock %}
+
